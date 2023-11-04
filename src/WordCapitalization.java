@@ -10,6 +10,16 @@ public class WordCapitalization {
         if (Character.isUpperCase(word.charAt(0)))
         {
             System.out.println(word);
+        }else {
+            System.out.println(Character.toUpperCase(word.charAt(0))+word.substring(1));
+        }
+
+    }
+}
+/*
+  if (Character.isUpperCase(word.charAt(0)))
+        {
+            System.out.println(word);
         }else
         {
             StringBuilder stringBuilder = new StringBuilder(word);
@@ -17,5 +27,4 @@ public class WordCapitalization {
             String finalWord = stringBuilder.toString();
             System.out.println(finalWord);
         }
-    }
-}
+ */
