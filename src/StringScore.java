@@ -10,35 +10,28 @@ public class StringScore {
     }
     public static int calculateScore(String string) {
         int score = 0;
-        char[] chars = string.toCharArray();
-
-        for (int i = 0; i < chars.length; i++) {
-            char currentChar = chars[i];
+        StringBuilder test=new StringBuilder(string);
+        for (int i = 0; i < test.length(); i++) {
+            char currentChar = test.charAt(i);
             if (currentChar == 'V') {
                 score += 5;
             } else if (currentChar == 'W') {
                 score += 2;
             } else if (currentChar == 'X') {
-                if (i < chars.length - 1) {
-                    chars[i + 1] = '0';
+                if (i < test.length() - 1) {
+                    i++;
                 }
             } else if (currentChar == 'Y') {
-                if (i < chars.length - 1) {
-                    char temp = chars[i + 1];
-                    for (int x = i + 1; x < chars.length - 1; x++) {
-                        chars[x]=chars[x+1];
-                    }
-                    chars[chars.length-1]=temp;
-                }
+               test.append(test.charAt(i+1));
+               i++;
             } else if (currentChar == 'Z') {
-                if (i < chars.length - 1) {
-                    if (chars[i + 1] == 'V') {
+                if (i < test.length() - 1) {
+                    if (test.charAt(i+1) == 'V') {
                         score /= 5;
-                        chars[i+1] = '0';
-                    } else if (chars[i + 1] == 'W') {
+                    } else if (test.charAt(i+1) == 'W') {
                         score /= 2;
-                        chars[i+1] = '0';
                     }
+                    i++;
                 }
             }
         }
