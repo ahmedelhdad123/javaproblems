@@ -9,6 +9,7 @@ public class PrimeFunction {
             int number=scanner.nextInt();
             System.out.println(isPrime(number));
         }
+
     }
     public static String isPrime(int number)
     {
