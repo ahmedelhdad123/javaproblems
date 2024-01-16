@@ -16,3 +16,9 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219774
 
 Link 6        
 https://codeforces.com/group/MWSDmqGsZm/contest/219856
+
+Link 7
+https://codeforces.com/group/MWSDmqGsZm/contest/223205
+
+Link8
+https://codeforces.com/group/MWSDmqGsZm/contest/223338
