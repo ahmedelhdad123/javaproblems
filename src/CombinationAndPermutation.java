@@ -9,7 +9,7 @@ public class CombinationAndPermutation {
     }
 
     private static long combination(long n, long k) {
-        long answer =0;
+        long answer;
         long multMin =1;
         long min = Math.min(n,k);
         for (long i =1;i<=min;i++) {
@@ -24,7 +24,7 @@ public class CombinationAndPermutation {
         long min = Math.min(n,k);
         long multMax=1;
         long multMin=1;
-        long answer=0;
+        long answer;
         for (long i=1; i<=max; i++) {
             multMax*=i;
             if (i<=(max-min))
