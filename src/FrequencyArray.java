@@ -18,6 +18,7 @@ public class FrequencyArray {
            store[i]=scanner.nextInt();
            int num=store[i];
            freq[num]++;
+           //freq[store[i]]++;
         }
         for (int i=1;i<check+1;i++)
         {
